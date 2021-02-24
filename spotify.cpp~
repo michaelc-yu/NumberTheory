@@ -1,0 +1,55 @@
+#include <iostream>
+#include <json/json.h>
+#include <vector>
+using namespace std;
+
+//function that reads in spotify user data originally in .json format
+
+int main(){
+  int score;
+  //read in set of files of listener 1
+  //read in set of files of listener 2
+
+  score = compatabilityscore(file1, file2);
+  summary(score);
+}
+
+
+//function that calculates compatability score from 2 files, possibly using ML concepts such as collaborative filtering
+
+int compatabilityscore(vector array1[], vector array2[]){
+  int len1 = sizeof(array1);
+  for (i=0; i<len; i++){
+    for (j=0; 
+
+
+/*
+iterates through each object {}, in the array [], identifying any commonality in artist name or track name
+if similar track name, calculate quantity of msPlayed (1000 ms = 1 second), comparing the 2 people's liking for that track
+add a certain value to the compatability score
+
+if similar artist, see if anyone listened to the artist in another track
+add a certain value to the compatability score
+
+need to normalize data, no repeats, the total number of seconds of similar song choice/artist divided by total number of seconds listened in .json file
+
+repeat for every StreamingHistory.json file
+*/
+}
+
+void summary(score){
+/*  
+function that returns a summary of the compatability between 2 user's music preferences
+
+prints out compatability score
+prints out what each range of compatability score means, and how similar you're music taste is to each other
+*/
+
+  cout<<"Compatability Score: "<<compatabilityscore<<endl;
+  cout<<"Score: 110+"<<endl;
+  cout<<"This is an off the charts matching result and should be treated that way! You and this match harmonize super well and should definitely consider getting to know each other. If you share this compatibility with someone, we highly recommend that you send them a message – who knows this could lead to an amazing first date."<<endl<<endl;
+  cout<<"Score: 100-109"<<endl;
+  cout<<"If you and this match received a 100 or higher in eharmony compatibility points, then you two are very compatible and we encourage reaching out. Take a quick look at their profile and send a message about something you have in common. Maybe you both are foodies – ask them what their favorite new restaurant is or what they like to cook."<<endl<<endl;
+  cout<<"Score: 60-99"<<endl;
+  cout<<"You have a base-level compatibility with this match and we recommend you getting to know them a little more. Take a look at your “Matching Result” tab and learn about what areas you both have in common. If you think you two have potential, send a Smile or an Icebreaker."<<endl<<endl;
+}
