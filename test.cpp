@@ -15,10 +15,13 @@ void add_one(int *x){
 }
 */
 
-int main(){
-  const int SIZE = 5;
-  int array[SIZE] = {1,2,3,4,5};
-  for (int *i=array; i<array+SIZE; ++i){
-    cout<< i <<endl;
+int main(int argc, char * argv[]){
+  cout << "% ";
+  char cmd;
+  cin >> cmd;
+  if (cmd == 'k') {
+    string category;
+    cin >> category;
+    cout << category << endl;
   }
 }
